@@ -25,7 +25,7 @@ export class Ball extends AcGameObject {
     }
 
     next_step() {
-
+        this.update_move();
     }
 
     change_direction() {
@@ -50,7 +50,6 @@ export class Ball extends AcGameObject {
     update() {
         // console.log("flush!");
         this.change_direction();
-        this.update_move();
         this.render();
     }
 
